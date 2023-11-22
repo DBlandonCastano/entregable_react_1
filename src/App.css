@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-size: cover;
+  font-family: "DS-Digital", sans-serif;
+}
+
+.bg1 {
+  background-image: url(/images/universe1.webp);
+}
+
+.bg2 {
+  background-image: url(/images/universe2.webp);
+}
+
+.bg3 {
+  background-image: url(/images/universe3.webp);
+}
+
+.bg4 {
+  background-image: url(/images/universe4.webp);
+}
+.quotebox__btn{
+  border: 3px solid ;
+  /* border-radius: 50%; */
+  border-radius: 50%;
+  background: rgba(246, 245, 245, 0.314); 
+  border-style: groove;
+  transition: all 0.10s ease;
+}
+.quotebox__btn:hover{
+  cursor: pointer;
+  /* background-color: #0000ff52; */
+  box-shadow: 0 0 5px rgb(246, 238, 3),
+              0 0 25px rgb(246, 238, 3),
+              0 0 50px rgb(246, 238, 3),
+              0 0 200px rgb(246, 238, 3);
+}
+.quotebox__box{
+  display: flex;
+  border: 3px;
+  background-color: rgba(246, 245, 245, 0.314);
+  max-width: 400px;
+  max-height: 200px;
+  transform: perspective(500px) rotateY(0deg);
+  transition: 1s;
+}
+.quotebox__box:hover {
+  transform: perspective(500px) rotateY(360deg);
+  box-shadow: 0 0 5px rgb(246, 238, 3),
+              0 0 25px rgb(246, 238, 3),
+              0 0 50px rgb(246, 238, 3),
+              0 0 200px rgb(246, 238, 3);
+}
+.quotebox__box p{
+  margin:auto;
+  padding: 30px 30px;
+  font-size: 22px;
+  color: black;
+ 
+}
+.quotebox__author{
+  display:flex;
+  width: 200px;
+  height: 100px;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 0;
+  border-radius: 90px 90px 0 0;
+  background-color: rgba(246, 245, 245, 0.314);
+  transition: 2s;
+}
+.quotebox__author:hover{
+  box-shadow: 0 0 5px rgb(246, 238, 3),
+              0 0 25px rgb(246, 238, 3),
+              0 0 50px rgb(246, 238, 3),
+              0 0 200px rgb(246, 35, 3);
+}
